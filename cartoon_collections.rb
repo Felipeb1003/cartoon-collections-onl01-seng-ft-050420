@@ -1,5 +1,10 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(names)
+  i = 0
+  while i< names.length
+    yield(names[i])
+    i += 1
+   end
+   names
 end
 
 def summon_captain_planet# code an argument here
@@ -14,3 +19,5 @@ def find_the_cheese# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
+
+roll_call_dwarves([]){|name| puts name}
