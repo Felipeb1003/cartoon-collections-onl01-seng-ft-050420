@@ -15,9 +15,12 @@ def long_planeteer_calls# code an argument here
   # Your code here
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+
+def find_the_cheese(words)
+    cheese_types= ["cheddar", "gouda", "camembert"] 
+   words.find{|word| cheese_types.include?(word)}
+      
+end
 end
 
 roll_call_dwarves([]){|name| puts name}
