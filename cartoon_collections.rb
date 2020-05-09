@@ -21,6 +21,3 @@ def find_the_cheese(words)
    words.find{|word| cheese_types.include?(word)}
       
 end
-end
-
-roll_call_dwarves([]){|name| puts name}
